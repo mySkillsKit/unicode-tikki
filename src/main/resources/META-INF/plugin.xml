@@ -1,0 +1,45 @@
+<idea-plugin>
+    <id>com.myskillskit.unicode</id>
+    <name>Unicode Tikki</name>
+    <version>1.0</version>
+    <vendor email="anatmainbox@gmail.com" url="https://github.com/mySkillsKit">Anatolii Vasilev</vendor>
+
+    <description><![CDATA[
+        Converts non-ASCII Unicode characters (codes above U+007F) to escaped UTF-16 sequences (\uXXXX) and vice versa.<br>
+        ASCII characters (U+0000 through U+007F) remain unchanged.<br>
+        <br><img src="example/encode.png"/>
+    ]]></description>
+
+    <idea-version since-build="231"/>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <change-notes><![CDATA[
+        <b>1.0</b>
+        <ul>
+          <li>Initial release of UnicodeAnat</li>
+        </ul>
+    ]]></change-notes>
+
+    <actions>
+        <action
+                id="com.myskillskit.unicode.ToUnicodeConverter"
+                class="com.myskillskit.unicode.ToUnicodeConverter"
+                text="To Unicode Escapes"
+                icon="/icons/actionIcon.svg"
+                description="Convert selected characters to Unicode escape sequences (\uXXXX). ASCII characters (U+0000-U+007F) are not changed."
+        >
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+
+        <action
+                id="com.myskillskit.unicode.FromUnicodeConverter"
+                class="com.myskillskit.unicode.FromUnicodeConverter"
+                text="From Unicode Escapes"
+                icon="/icons/actionIcon.svg"
+                description="Convert Unicode escape sequences (\uXXXX) in selected text back to characters."
+        >
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>

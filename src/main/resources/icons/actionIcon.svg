@@ -1,0 +1,41 @@
+<svg width="16" height="13" viewBox="0 0 16 13"
+	 xmlns="http://www.w3.org/2000/svg">
+
+	<!-- фон -->
+	<rect x="0" y="0" width="16" height="13" rx="2" ry="2"
+		  fill="#5B6DFF"/>
+
+	<!-- { -->
+	<path d="M5 3
+           C4 3.5 4 5 5 5.5
+           C4 6 4 7.5 5 8"
+		  fill="none"
+		  stroke="white"
+		  stroke-width="1"
+		  stroke-linecap="round"/>
+
+	<!-- < > -->
+	<polyline points="7,4 6,6.5 7,9"
+			  fill="none"
+			  stroke="white"
+			  stroke-width="1"
+			  stroke-linecap="round"
+			  stroke-linejoin="round"/>
+
+	<polyline points="9,4 10,6.5 9,9"
+			  fill="none"
+			  stroke="white"
+			  stroke-width="1"
+			  stroke-linecap="round"
+			  stroke-linejoin="round"/>
+
+	<!-- } -->
+	<path d="M11 3
+           C12 3.5 12 5 11 5.5
+           C12 6 12 7.5 11 8"
+		  fill="none"
+		  stroke="white"
+		  stroke-width="1"
+		  stroke-linecap="round"/>
+
+</svg>
