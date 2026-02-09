@@ -31,7 +31,7 @@ Both actions are available from the editor context menu when text is selected.
 2. Search for **Unicode Tikki**
 3. Click **Install**
 
-Or install directly from the [JetBrains Plugins Repository](https://plugins.jetbrains.com/plugin/13268-unicode-escaper).
+Or install directly from the [JetBrains Plugins Repository](https://plugins.jetbrains.com/plugin/30129-unicode-tikki).
 
 ### From Source
 
@@ -54,10 +54,6 @@ The plugin ZIP will be in `build/distributions/`. Install it via **Settings** â†
 ```bash
 ./gradlew build
 ```
-
-## Links
-
-- [JetBrains Plugins Repository](https://plugins.jetbrains.com/plugin/13268-unicode-escaper)
 
 ## License
 

@@ -7,7 +7,7 @@
     <description><![CDATA[
         Converts non-ASCII Unicode characters (codes above U+007F) to escaped UTF-16 sequences (\uXXXX) and vice versa.<br>
         ASCII characters (U+0000 through U+007F) remain unchanged.<br>
-        <br><img src="example/encode.png"/>
+        <br><img src="https://github.com/mySkillsKit/unicode-tikki/blob/main/example/encode.png"/>
     ]]></description>
 
     <idea-version since-build="231"/>
