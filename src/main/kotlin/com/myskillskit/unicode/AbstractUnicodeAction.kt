@@ -1,5 +1,6 @@
 package com.myskillskit.unicode
 
+import com.intellij.openapi.actionSystem.ActionUpdateThread
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
@@ -30,6 +31,8 @@ abstract class AbstractUnicodeAction : AnAction() {
         e.presentation.isEnabledAndVisible =
             editor != null && editor.caretModel.primaryCaret.hasSelection()
     }
+
+    override fun getActionUpdateThread(): ActionUpdateThread = ActionUpdateThread.EDT
 
     protected abstract fun convert(text: String): String
 }
